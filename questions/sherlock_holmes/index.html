@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Exploitation Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+        <div class="container">
+        
+            <h1>Welcome to the Web Exploitation Challenge!</h1>
+        
+            <p>Can you find the flag?</p>
+        
+            <button id="flagButton" onclick="showidea()">Show Flag</button>
+        
+            <div id ="sugam" style="display: none;"><p>No this is not the flag</p></div>
+        
+            <div id="flag" style="display:none;">Do you know how to inspect a page? Keep looking...</div>
+        
+        </div>
+        
+        <script>
+        
+        function showidea(){ 
+            if (document.getElementById('sugam').style.display="none"){
+                 document.getElementById('sugam').style.display="block";
+        
+        }
+        
+        else{
+        
+            document.getElementById('sugam').style.display="none";
+        
+        
+        }
+        
+        } </script>
+        </body> </html>
+
